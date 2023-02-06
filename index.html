@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/main.css">
+    <title>2048</title>
+</head>
+<body onload="gameStart()">
+    <div class="mainField">
+        <div class="maxCount"></div>
+        <div class="gameField">
+
+        </div>
+    </div>
+
+    <div class="keyboard">
+        <div class="keyUp" onclick="keyUp()">↑</div>
+        <div class="keyLine">
+            <div class="keyLeft" onclick="keyLeft()">←</div>
+            <div class="keyDown" onclick="keyDown()">↓</div>
+            <div class="keyRight" onclick="keyRight()">→</div>
+        </div>
+    </div>
+
+    <button onclick="gameStart()">Сброс</button>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
